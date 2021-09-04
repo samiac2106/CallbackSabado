@@ -5,16 +5,19 @@ function matricularPadawan(nombre,edad,planeta,estatura,clasificar){
         planeta:planeta,
         estatura:estatura
     }
-    matricularPadawan("Sandra",41, "tierra","1.55",function(){     
-        if (padaxan.edad<15){
-            console.log("Manejo de la fuerza")
-
-        }else{
-            console.log("Manejo de la luz")
-        }
-})
+   
+    clasificar(padaxan)
 
 }
+
+matricularPadawan("Sandra",41, "tierra","1.55",function(padaxan){     
+    if (padaxan.edad<15){
+        console.log("Manejo de la fuerza")
+
+    }else{
+        console.log("Manejo de la luz")
+    }
+})
 
 
 
